@@ -54,7 +54,11 @@ class Dog
   end
   
   def self.find_by_id(id)
-    
+    sql = <<-SQL
+    SELECT * FROM dogs
+    WHERE id = ?
+    LIMIT = 1
+    SQL
   end
   
   def self.find_by_name(name)
