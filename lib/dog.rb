@@ -70,7 +70,8 @@ class Dog
     LIMIT = 1
     SQL
     
-    DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql, name).map do |row|
+      
   end
   
   
