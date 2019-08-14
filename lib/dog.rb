@@ -1,5 +1,5 @@
 class Dog
-  attr_accessors :name, :breed
+  attr_accessors :id, :name, :breed
   
   def initialize(id:nil, name:, breed:)
     @id = id
