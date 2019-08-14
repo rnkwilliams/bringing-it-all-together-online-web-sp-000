@@ -40,6 +40,10 @@ class Dog
       self
   end
   
+  def self.create(name:, breed:)
+    new_dog = Dog.create
+  end
+    
   def self.new_from_db(row)
     id = row[0]
     name = row[1]
