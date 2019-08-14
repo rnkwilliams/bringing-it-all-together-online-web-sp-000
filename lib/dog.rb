@@ -28,7 +28,7 @@ class Dog
   def self.new_from_db
     new_dog = Dog.new_from_db(row)
     new_dog.id = row[0]
-    expect(pat.name).row[1]
+    new_dog.name).row[1]
     expect(pat.breed).row[2]
     
   end
