@@ -57,7 +57,7 @@ class Dog
     sql = <<-SQL
     SELECT * FROM dogs
     WHERE id = ?
-    LIMIT = 1
+    LIMIT 1
     SQL
     
     DB[:conn].execute(sql, id).map do |row|
@@ -69,7 +69,7 @@ class Dog
     sql = <<-SQL
     SELECT * FROM dogs
     WHERE name = ?
-    LIMIT = 1
+    LIMIT 1
     SQL
     
     DB[:conn].execute(sql, name).map do |row|
