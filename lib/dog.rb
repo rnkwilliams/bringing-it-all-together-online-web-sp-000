@@ -23,7 +23,12 @@ class Dog
     sql = "DROP TABLE dogs"
     
     DB[:conn].execute(sql)
+  end
+  
+  def self.new_from_db
     
   end
+  
+  
 end
   
